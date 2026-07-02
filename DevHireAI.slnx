@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="DevHireAI.API/DevHireAI.API.csproj" />
+  <Project Path="DevHireAI.Application/DevHireAI.Application.csproj" />
+  <Project Path="DevHireAI.Domain/DevHireAI.Domain.csproj" />
+  <Project Path="DevHireAI.Infrastructure/DevHireAI.Infrastructure.csproj" />
+  <Project Path="DevHireAI.Shared/DevHireAI.Shared.csproj" />
+</Solution>
