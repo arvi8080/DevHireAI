@@ -1,4 +1,5 @@
 ﻿namespace DevHireAI.Domain.Enums
+
 {
     public enum UserRole
     {

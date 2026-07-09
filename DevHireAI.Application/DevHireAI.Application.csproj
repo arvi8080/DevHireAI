@@ -11,4 +11,8 @@
     <ProjectReference Include="..\DevHireAI.Shared\DevHireAI.Shared.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Interfaces\NewFolder\" />
+  </ItemGroup>
+
 </Project>
