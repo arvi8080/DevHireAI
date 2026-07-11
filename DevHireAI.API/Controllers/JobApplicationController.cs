@@ -20,6 +20,7 @@ public class JobApplicationController : ControllerBase
     }
 
     // POST: api/JobApplication/apply
+    [Authorize(Roles = "Candidate")]
     [HttpPost("apply")]
     public async Task<IActionResult> Apply([FromBody] ApplyJobRequest request)
     {

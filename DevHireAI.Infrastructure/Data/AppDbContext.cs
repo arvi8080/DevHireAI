@@ -20,4 +20,5 @@ public class AppDbContext : DbContext
     public DbSet<Resume> Resumes => Set<Resume>();
     public DbSet<Company> Companies => Set<Company>();
     public DbSet<RefreshToken> RefreshTokens => Set<RefreshToken>();
+    public DbSet<EmailVerificationToken> EmailVerificationTokens { get; set; }
 }

@@ -1,12 +1,17 @@
+using DevHireAI.API.Middleware;
 using DevHireAI.Application.Interfaces.Repositories;
 using DevHireAI.Application.Interfaces.Services;
+using DevHireAI.Application.Validators;
 using DevHireAI.Infrastructure.Data;
 using DevHireAI.Infrastructure.Repositories;
 using DevHireAI.Infrastructure.Services;
+using FluentValidation;
+using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using Serilog;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -58,6 +63,16 @@ builder.Services.AddScoped<ICompanyService, CompanyService>();
 builder.Services.AddScoped<IRefreshTokenRepository, RefreshTokenRepository>();
 builder.Services.AddScoped<IRefreshTokenService, RefreshTokenService>();
 builder.Services.AddScoped<IAIService, AIService>();
+builder.Services.AddScoped<IPdfParserService, PdfParserService>();
+builder.Services.AddScoped<IEmailVerificationRepository, EmailVerificationRepository>();
+builder.Services.AddScoped<IEmailService, EmailService>();
+builder.Services.AddControllers();
+
+builder.Services.AddFluentValidationAutoValidation();
+
+builder.Services.AddValidatorsFromAssemblyContaining<RegisterRequestValidator>();
+builder.Services.AddHealthChecks();
+
 
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 
@@ -108,9 +123,22 @@ builder.Services.AddCors(options =>
     });
 });
 
+Log.Logger = new LoggerConfiguration()
+    .WriteTo.Console()
+    .WriteTo.File(
+        "Logs/log-.txt",
+        rollingInterval: RollingInterval.Day)
+    .CreateLogger();
+
+builder.Host.UseSerilog();
+
 
 
 var app = builder.Build();
+
+Log.Information("DevHireAI API started successfully.");
+
+app.Run();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -122,11 +150,13 @@ if (app.Environment.IsDevelopment())
 //app.UseHttpsRedirection();
 
 app.UseCors("AllowAll");
+app.UseMiddleware<ExceptionMiddleware>();
 
 app.UseAuthentication();
 
 app.UseAuthorization();
 
 app.MapControllers();
+app.MapHealthChecks("/health");
 
 app.Run();

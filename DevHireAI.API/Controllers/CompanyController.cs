@@ -8,7 +8,7 @@ namespace DevHireAI.API.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
-[Authorize]
+[Authorize(Roles = "Recruiter")]
 public class CompanyController : ControllerBase
 {
     private readonly ICompanyService _companyService;

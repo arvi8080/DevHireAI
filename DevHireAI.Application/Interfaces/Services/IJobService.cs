@@ -11,4 +11,6 @@ public interface IJobService
     Task CreateJobAsync(CreateJobRequest request);
 
     Task DeleteJobAsync(Guid id);
+
+    Task<PagedResponse<JobResponse>> SearchJobsAsync(JobSearchRequest request);
 }

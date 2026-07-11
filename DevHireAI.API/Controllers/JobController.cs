@@ -34,6 +34,8 @@ public class JobController : ControllerBase
         return Ok(job);
     }
 
+
+    [Authorize(Roles = "Recruiter")]
     [HttpPost]
     public async Task<IActionResult> Create(CreateJobRequest request)
     {
@@ -45,6 +47,7 @@ public class JobController : ControllerBase
         });
     }
 
+    [Authorize(Roles = "Recruiter")]
     [HttpDelete("{id:guid}")]
     public async Task<IActionResult> Delete(Guid id)
     {
@@ -52,4 +55,13 @@ public class JobController : ControllerBase
 
         return Ok(new { Message = "Job deleted successfully." });
     }
+
+    [HttpGet("search")]
+    public async Task<IActionResult> SearchJobs([FromQuery] JobSearchRequest request)
+    {
+        var result = await _jobService.SearchJobsAsync(request);
+        return Ok(result);
+    }
+
+
 }

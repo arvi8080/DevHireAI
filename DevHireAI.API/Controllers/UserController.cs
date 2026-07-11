@@ -18,6 +18,7 @@ public class UserController : ControllerBase
     }
 
     // GET: api/User
+    [Authorize(Roles = "Admin")]
     [HttpGet]
     public async Task<IActionResult> GetAll()
     {
@@ -38,6 +39,7 @@ public class UserController : ControllerBase
     }
 
     // GET: api/User/me  (CURRENT LOGGED-IN USER)
+    [Authorize]
     [HttpGet("me")]
     public async Task<IActionResult> GetCurrentUser()
     {

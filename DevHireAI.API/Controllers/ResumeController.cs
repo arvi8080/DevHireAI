@@ -8,7 +8,7 @@ namespace DevHireAI.API.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
-[Authorize]
+[Authorize(Roles = "Candidate")]
 public class ResumeController : ControllerBase
 {
     private readonly IResumeService _resumeService;

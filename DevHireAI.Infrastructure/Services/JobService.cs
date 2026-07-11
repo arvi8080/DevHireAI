@@ -74,4 +74,27 @@ public class JobService : IJobService
 
         await _jobRepository.DeleteAsync(job);
     }
+    public async Task<PagedResponse<JobResponse>> SearchJobsAsync(JobSearchRequest request)
+    {
+        var result = await _jobRepository.SearchJobsAsync(request);
+
+        return new PagedResponse<JobResponse>
+        {
+            Items = result.Items.Select(job => new JobResponse
+            {
+                Id = job.Id,
+                Title = job.Title,
+                Description = job.Description,
+                CompanyName = job.CompanyName,
+                Location = job.Location,
+                Salary = job.Salary
+            }).ToList(),
+
+            Page = result.Page,
+            PageSize = result.PageSize,
+            TotalCount = result.TotalCount,
+            TotalPages = result.TotalPages
+        };
+    }
+
 }

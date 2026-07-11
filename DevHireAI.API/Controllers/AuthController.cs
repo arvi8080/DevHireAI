@@ -53,6 +53,13 @@ public class AuthController : ControllerBase
         });
     }
 
+    [HttpGet("verify-email")]
+    public async Task<IActionResult> VerifyEmail([FromQuery] string token)
+    {
+        // verification logic
+        return Ok(new { Message = "Email verified successfully." });
+    }
+
 
 
 
