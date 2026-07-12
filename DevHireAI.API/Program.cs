@@ -26,7 +26,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
         {
             sqlOptions.EnableRetryOnFailure();
         }));
-builder.Services.AddControllers();
+
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
     {
@@ -138,7 +138,7 @@ var app = builder.Build();
 
 Log.Information("DevHireAI API started successfully.");
 
-app.Run();
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

@@ -5,3 +5,39 @@
 2026-07-11 19:13:38.561 +05:30 [INF] Hosting environment: Development
 2026-07-11 19:13:38.561 +05:30 [INF] Content root path: C:\New folder (6)\DevHireAI\DevHireAI.API
 2026-07-11 19:18:44.497 +05:30 [INF] Application is shutting down...
+2026-07-11 19:43:43.186 +05:30 [INF] DevHireAI API started successfully.
+2026-07-11 19:43:43.249 +05:30 [INF] User profile is available. Using 'C:\Users\arvin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-07-11 19:43:43.312 +05:30 [INF] Now listening on: http://localhost:5131
+2026-07-11 19:43:43.320 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-11 19:43:43.322 +05:30 [INF] Hosting environment: Development
+2026-07-11 19:43:43.326 +05:30 [INF] Content root path: C:\New folder (6)\DevHireAI\DevHireAI.API
+2026-07-11 19:43:45.856 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5131/swagger/index.html - null null
+2026-07-11 19:43:45.988 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5131/swagger/index.html - 404 0 null 135.4826ms
+2026-07-11 19:43:46.007 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5131/swagger/index.html, Response status code: 404
+2026-07-11 19:43:48.073 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5131/swagger/index.html - null null
+2026-07-11 19:43:48.084 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5131/swagger/index.html - 404 0 null 12.6493ms
+2026-07-11 19:43:48.092 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5131/swagger/index.html, Response status code: 404
+2026-07-11 19:43:49.464 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5131/swagger/index.html - null null
+2026-07-11 19:43:49.474 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5131/swagger/index.html - 404 0 null 10.2226ms
+2026-07-11 19:43:49.481 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5131/swagger/index.html, Response status code: 404
+2026-07-11 19:44:14.342 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5131/swagger/index.html - null null
+2026-07-11 19:44:14.355 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5131/swagger/index.html - 404 0 null 12.9702ms
+2026-07-11 19:44:14.362 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5131/swagger/index.html, Response status code: 404
+2026-07-11 19:44:16.046 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5131/swagger/index.html - null null
+2026-07-11 19:44:16.054 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5131/swagger/index.html - 404 0 null 7.9561ms
+2026-07-11 19:44:16.062 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5131/swagger/index.html, Response status code: 404
+2026-07-11 19:44:18.559 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5131/swagger/index.html - null null
+2026-07-11 19:44:18.571 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5131/swagger/index.html - 404 0 null 11.7373ms
+2026-07-11 19:44:18.582 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5131/swagger/index.html, Response status code: 404
+2026-07-11 19:44:19.509 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5131/swagger/index.html - null null
+2026-07-11 19:44:19.520 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5131/swagger/index.html - 404 0 null 11.6382ms
+2026-07-11 19:44:19.529 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5131/swagger/index.html, Response status code: 404
+2026-07-11 19:44:20.339 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5131/swagger/index.html - null null
+2026-07-11 19:44:20.356 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5131/swagger/index.html - 404 0 null 16.9718ms
+2026-07-11 19:44:20.369 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5131/swagger/index.html, Response status code: 404
+2026-07-11 19:44:31.750 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5131/ - null null
+2026-07-11 19:44:31.759 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5131/ - 404 0 null 8.7558ms
+2026-07-11 19:44:31.765 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5131/, Response status code: 404
+2026-07-11 19:44:33.999 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5131/ - null null
+2026-07-11 19:44:34.007 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5131/ - 404 0 null 8.3632ms
+2026-07-11 19:44:34.013 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5131/, Response status code: 404

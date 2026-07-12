@@ -1,0 +1,27 @@
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: devhireai-sql
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: "YourStrong@Pass123"
+    ports:
+      - "1433:1433"
+    volumes:
+      - sql_data:/var/opt/mssql
+
+  api:
+    build:
+      context: .
+      dockerfile: DevHireAI.API/Dockerfile
+    container_name: devhireai-api   # ✅ FIXED
+    depends_on:
+      - sqlserver
+    ports:
+      - "5131:8080"
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ConnectionStrings__DefaultConnection: "Server=sqlserver;Database=DevHireAIDb;User Id=sa;Password=YourStrong@Pass123;TrustServerCertificate=True;Encrypt=False"
+
+volumes:
+  sql_data:
