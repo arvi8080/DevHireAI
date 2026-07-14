@@ -1,3 +1,85 @@
+# 🏷️ GitHub Badges
+
+Place these directly below your project title.
+
+```markdown
+![.NET](https://img.shields.io/badge/.NET-10.0-purple?style=for-the-badge&logo=.net)
+
+![C#](https://img.shields.io/badge/C%23-Language-239120?style=for-the-badge&logo=c-sharp)
+
+![SQL Server](https://img.shields.io/badge/SQL%20Server-Database-red?style=for-the-badge&logo=microsoftsqlserver)
+
+![Docker](https://img.shields.io/badge/Docker-Containerization-2496ED?style=for-the-badge&logo=docker)
+
+![GitHub Actions](https://img.shields.io/badge/GitHub-Actions-2088FF?style=for-the-badge&logo=githubactions)
+
+![Swagger](https://img.shields.io/badge/Swagger-API-85EA2D?style=for-the-badge&logo=swagger)
+
+![JWT](https://img.shields.io/badge/JWT-Authentication-black?style=for-the-badge&logo=jsonwebtokens)
+
+![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)
+
+![Build](https://img.shields.io/badge/Build-Passing-brightgreen?style=for-the-badge)
+
+![Version](https://img.shields.io/badge/Version-v1.0-blue?style=for-the-badge)
+```
+
+---
+
+# 📋 Table of Contents
+
+```markdown
+## 📚 Table of Contents
+
+- Project Overview
+- Features
+- Architecture
+- Tech Stack
+- Folder Structure
+- Installation
+- Configuration
+- Docker
+- API Documentation
+- Authentication
+- Health Checks
+- Logging
+- Screenshots
+- Roadmap
+- Contributing
+- License
+- Author
+```
+
+---
+
+# 🌟 Why DevHireAI?
+
+```markdown
+## 🌟 Why DevHireAI?
+
+Recruitment today involves managing candidates, job postings, resumes, and communication across multiple systems.
+
+DevHireAI centralizes these workflows into a single AI-powered platform, helping recruiters and candidates interact efficiently while following modern software engineering practices.
+
+The project demonstrates enterprise-level backend development using ASP.NET Core, Clean Architecture, SQL Server, JWT Authentication, Docker, and CI/CD.
+```
+
+---
+
+# 🎯 Objectives
+
+```markdown
+## 🎯 Objectives
+
+- Build a scalable recruitment platform.
+- Demonstrate Clean Architecture.
+- Implement secure JWT authentication.
+- Integrate AI-powered resume analysis.
+- Containerize the application using Docker.
+- Prepare the project for cloud deployment.
+- Follow production-ready development practices.
+```
+
 # 🚀 DevHireAI
 
 > **AI-Powered Recruitment Platform built with ASP.NET Core 10, Clean Architecture, SQL Server, Docker, and JWT Authentication.**
